@@ -13,6 +13,10 @@ public class Main {
         System.out.println("Let's calculate Factorials!");
 
         System.out.print("Please input an integer from 1 to 10: ");
+        while (!scnr.hasNextInt()) {
+            System.out.println("That is not a number. Please enter a number.");
+            scnr.next();
+        }
         userNum = scnr.nextInt();
 
         
